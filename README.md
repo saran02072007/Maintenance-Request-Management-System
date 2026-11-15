@@ -1,7 +1,17 @@
 # FixFlow — Campus Maintenance Request Management System (OOAD)
 ### K.Ramakrishnan College of Technology (Autonomous), Tiruchirappalli
+**Department of Computer Science and Engineering**  
+**Course:** CSB1303 – Object Oriented Analysis & Design (Semester 5)
 
-An Object-Oriented Analysis and Design (OOAD) academic web application engineered specifically for **K.Ramakrishnan College of Technology (KRCT)**. The system models the complete physical departmental and laboratory layout across the **Circuit Block** (4 Floors + Ground) and **Unwind Block** (5 Floors). Built with React.js, modern responsive CSS, Lucide React icons, and browser LocalStorage persistence.
+#### 👥 Project Team:
+- **Sakthivel K** — `2403811710421137`
+- **Saran I** — `2403811710421140`
+- **Yuvaraj S** — `2403811710421187`
+
+#### 🎓 Faculty Supervision:
+- **Project Supervisor:** Ms. S. Shahina Shalu M.E., Assistant Professor / CSE
+- **Head of Department:** Mr. R. Rajavarman M.E., (Ph.D.,), Assistant Professor (Sr. Grade) / CSE
+- **Principal:** Dr. N. Vasudevan
 
 ---
 
