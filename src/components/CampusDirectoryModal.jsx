@@ -46,7 +46,7 @@ export const CampusDirectoryModal = ({ isOpen, onClose }) => {
         </div>
 
         {/* Modal Body */}
-        <div className="modal-body" style={{ maxHeight: '78vh' }}>
+        <div className="modal-body" style={{ flex: '1 1 auto', minHeight: 0, overflowY: 'auto' }}>
           {/* Block Switcher Tabs */}
           <div style={{ display: 'flex', gap: '0.75rem', borderBottom: '1px solid #e2e8f0', paddingBottom: '0.75rem' }}>
             {Object.keys(KRCT_CAMPUS_BLOCKS).map((bKey) => {

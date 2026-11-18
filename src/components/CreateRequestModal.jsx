@@ -216,8 +216,8 @@ export const CreateRequestModal = ({ isOpen, onClose }) => {
           </button>
         </div>
 
-        <form onSubmit={handleSubmit}>
-          <div className="modal-body" style={{ maxHeight: '78vh' }}>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', flex: '1 1 auto', minHeight: 0, overflow: 'hidden' }}>
+          <div className="modal-body" style={{ flex: '1 1 auto', minHeight: 0, overflowY: 'auto' }}>
             {/* Category Selection */}
             <div className="form-group">
               <label className="form-label">
@@ -487,13 +487,25 @@ export const CreateRequestModal = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          <div className="modal-footer">
-            <button type="button" className="btn-secondary" onClick={onClose}>
+          <div className="modal-footer" style={{ background: '#f8fafc', borderTop: '1px solid #e2e8f0', padding: '1rem 1.75rem', position: 'sticky', bottom: 0, zIndex: 10 }}>
+            <button type="button" className="btn-secondary" onClick={onClose} style={{ padding: '0.65rem 1.25rem', fontSize: '0.88rem' }}>
               Cancel
             </button>
-            <button type="submit" className="btn-primary" disabled={submitting}>
+            <button
+              type="submit"
+              className="btn-primary"
+              disabled={submitting}
+              style={{
+                background: '#1e3a8a',
+                color: '#ffffff',
+                fontWeight: 700,
+                fontSize: '0.9rem',
+                padding: '0.65rem 1.5rem',
+                boxShadow: '0 2px 6px rgba(30, 58, 138, 0.25)'
+              }}
+            >
               <CheckCircle size={16} />
-              {submitting ? 'Submitting...' : 'Submit to KRCT Maintenance Office'}
+              {submitting ? 'Submitting to KRCT...' : 'Submit to KRCT Maintenance Office'}
             </button>
           </div>
         </form>

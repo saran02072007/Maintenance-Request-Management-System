@@ -106,7 +106,7 @@ export const RequestDetailModal = () => {
         </div>
 
         {/* Modal Body */}
-        <div className="modal-body" style={{ maxHeight: '78vh' }}>
+        <div className="modal-body" style={{ flex: '1 1 auto', minHeight: 0, overflowY: 'auto' }}>
           {/* Title & Core Details */}
           <div>
             <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#0f172a', marginBottom: '0.5rem' }}>
